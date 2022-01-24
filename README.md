@@ -1,4 +1,4 @@
 # telegram
 # Телеграм веб-версии
-# Адаптирован только под ноутбуки
+# Сайт не адаптирован под маленькие размеры экранов
 # https://abduramanovlenur.github.io/telegram/dist/index.html
