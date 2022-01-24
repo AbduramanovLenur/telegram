@@ -1,0 +1,61 @@
+.account {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #221e1e80;
+    z-index: 25;
+    transition: all .5s ease;
+    &__inner {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 500px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--c-ebony);
+        border-radius: 50px;
+        padding: 40px;
+    }
+    &__pic {
+        margin-bottom: 20px;
+        img {
+            border-radius: 20px;
+        }
+    }
+    &__title {
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    &__list {
+        margin-bottom: 30px;
+    }
+    &__regulations {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+        font-family: 'Nunito', sans-serif;
+    }
+    &__number {
+        font-family: 'Nunito', sans-serif;
+        color: #2864b3;
+        cursor: pointer;
+    }
+}
+
+.account-active {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}

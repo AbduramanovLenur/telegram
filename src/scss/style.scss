@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Oswald:wght@500&family=Outfit:wght@400;600;700&display=swap");
+
+:root {
+    --c-ebony: #ffffff;
+    --c-black: #ffffff;
+    --c-light: #000;
+    --c-crow: #fff;
+    --c-purple: #000;
+    --c-pebble: #fff;
+    --c-raven: #a39d9d;
+    --c-onyx: #c9c1c1;
+    --c-grease: #fff;
+    --c-pitch: #fff;
+    --c-jade: #a39d9d;
+}
+
+body.is-dark-theme-enabled {
+    --c-black: #181818;
+    --c-ebony: #221f1f;
+    --c-light: #fff;
+    --c-crow: #302d2d;
+    --c-purple: #746c6c;
+    --c-pebble: #212121;
+    --c-raven: #292121;
+    --c-onyx: #515151;
+    --c-grease: #3b373780;
+    --c-pitch: #241d1d;
+    --c-jade: #14121280;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    background-color: var(--c-black);
+    color: var(--c-light);
+    overflow: hidden;
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+input {
+    &:focus {
+        outline: none;
+    }
+}
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container-fluid {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+@import "blocks/*.scss";
